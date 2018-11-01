@@ -53,3 +53,24 @@ Will be making some change here
 	renamed:    looged in.html -> logged-in.html
 	new file:   note.txt
 
+	deleted:    cookieFunction.js
+	new file:   js/script.js
+
+
+4. Unnecessary files
+	You don't need to put all the files you downloaded from a framework/library
+	example: bootstrap.css is same as bootstrap.min.css 
+	          only that bootstrap.min.css is minified version of boostrap.css
+	          same for the js and any other file that has .ext & .min.ext   
+
+
+5. Variable naming conventions
+	When naming a wariable, give it names that relates it to what it is doing or value its holding
+	You were trying to implement a User Remember Me function, so i dont think you should 
+	  name it just state: state of what?
+	you could do: 'remember-me' with value 'yes/no, true/false'{strings though}
+	I even discovered that if i dont select the remember me option, it still showed
+	  me an alert with the message Logged out which is the value of the cookie 
+
+	  
+6. 

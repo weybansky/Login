@@ -1,7 +1,7 @@
 function window_onload()
 {
-  state=getCookieValue('State');
-  if (state=='Logged in')
+  state=getCookieValue('remember-me');
+  if (state=='true')
   {
     window.location.replace('logged-in.html');
   }
@@ -38,7 +38,7 @@ function btn_createCookie()
           if (document.myForm.chkRemember.checked)
           {
             setCookie('Email',email.value,'','');
-            setCookie('State','Logged in','','');
+            setCookie('remember-me','true','','');
           }
         }
     }
@@ -48,7 +48,7 @@ function btn_createCookie()
 
 function btnLogOut(){
   alert('clicked')
-  setCookie('State','Logged out','','');
+  setCookie('remember-me','false','','');
 }
 
 function setCookie(cookieName,cookieValue,cookieExpires,cookiePath)
