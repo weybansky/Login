@@ -3,62 +3,12 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
-    <script src='bootstrap/jquery/jquery.min.js'></script>
-    <script src='bootstrap/js/bootstrap.min.js'></script>
-    <script type="text/javascript" src='cookieFunction.js'></script>
-    <script type="text/javascript">
-      function window_onload()
-      {
-        state=getCookieValue('State');
-        if (state=='Logged in')
-        {
-          window.location.replace('looged in.html');
-        }
-      }
-
-      function btn_createCookie()
-      {
-        var myRegExp=/^(([^<>()\[\]\\.,;:@“\x00-\x20\x7F]|\\.)+|("""([^\x0A\x0D”\\]|\\\\)+"""))@(([a-z]|#\d+?)([a-z0-9-]|#\d+?)*([a-z0-9]|#\d+?)\.)+([a-z]{2,4})$/i;
-        var email=document.myForm.txtEmail;
-        var password=document.myForm.pwdPassword
-        if (email.value=='')
-        {
-          alert('this field cannot be empty')
-          email.focus();
-        }
-        else
-        {
-          if (!(myRegExp.test(email.value)))
-          {
-            alert('invalid email');
-            email.focus();
-            email.select();
-          }
-          else
-          {
-              if (password.value=='')
-              {
-                alert('this field cannot be empty');
-                password.focus();
-              }
-              else
-              {
-                window.location.href='looged in.html';
-                if (document.myForm.chkRemember.checked)
-                {
-                  setCookie('Email',email.value,'','');
-                  setCookie('State','Logged in','','');
-                }
-              }
-          }
-        }
-
-      }
-    </script>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/script.js'></script>
     <title>Log in Form</title>
   </head>
-
   <body onload='window_onload()'>
     <div class='container'>
         <div class='jumbotron' style='margin-top:30px; max-width:900px;'>

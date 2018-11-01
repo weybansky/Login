@@ -3,17 +3,10 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
-    <script src='bootstrap/jquery/jquery.min.js'></script>
-    <script src='bootstrap/js/bootstrap.min.js'></script>
-    <script type="text/javascript" src='cookieFunction.js'></script>
-    <script type="text/javascript">
-      function btnLogOut(){
-        alert('clicked')
-                          setCookie('State','Logged out','','');
-      }
-    </script>
-    
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/script.js'></script>
     <title>logged in</title>
   </head>
   <body onload='alert(getCookieValue("State"))'>
