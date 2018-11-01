@@ -1,0 +1,55 @@
+Hey,
+Will be making some change here
+
+1. file naming
+	never use spaces when naming files => might not work in some browser configurations
+	SO looged in.html => logged-in.html
+
+2. Using one file
+	You can always create a single script.js to contain all functions instead of writing functions
+	in different file.
+	SO  cookieFunction.js + inline script tag => script.js
+
+3. Directory Structures
+	It is always good to organize your diretories for different file 
+	An example for a simple HTML CSS Project is this
+		+ PROJECT NAME
+			- css 							# for stylesheets
+				bootstrap.min.css
+				styles.css
+			- fonts 						# for fonts 
+				font.woff
+			- img							# for images( can also be named images)
+				profile.jpg
+			- js							# for javascript files
+				bootstrap.min.js
+				jquery.min.js
+				script.js
+			index.html
+			login.html
+			login-form.html
+
+	So => I have arranged it according to the above folder structure
+
+	CHANGES MADE BELOW
+	modified:   cookieFunction.js
+	renamed:    bootstrap/css/bootstrap-theme.css -> css/bootstrap-theme.css
+	renamed:    bootstrap/css/bootstrap-theme.css.map -> css/bootstrap-theme.css.map
+	renamed:    bootstrap/css/bootstrap-theme.min.css -> css/bootstrap-theme.min.css
+	renamed:    bootstrap/css/bootstrap-theme.min.css.map -> css/bootstrap-theme.min.css.map
+	renamed:    bootstrap/css/bootstrap.css -> css/bootstrap.css
+	renamed:    bootstrap/css/bootstrap.css.map -> css/bootstrap.css.map
+	renamed:    bootstrap/css/bootstrap.min.css -> css/bootstrap.min.css
+	renamed:    bootstrap/css/bootstrap.min.css.map -> css/bootstrap.min.css.map
+	renamed:    bootstrap/fonts/glyphicons-halflings-regular.eot -> fonts/glyphicons-halflings-regular.eot
+	renamed:    bootstrap/fonts/glyphicons-halflings-regular.svg -> fonts/glyphicons-halflings-regular.svg
+	renamed:    bootstrap/fonts/glyphicons-halflings-regular.ttf -> fonts/glyphicons-halflings-regular.ttf
+	renamed:    bootstrap/fonts/glyphicons-halflings-regular.woff -> fonts/glyphicons-halflings-regular.woff
+	renamed:    bootstrap/fonts/glyphicons-halflings-regular.woff2 -> fonts/glyphicons-halflings-regular.woff2
+	renamed:    bootstrap/js/bootstrap.js -> js/bootstrap.js
+	renamed:    bootstrap/js/bootstrap.min.js -> js/bootstrap.min.js
+	renamed:    bootstrap/jquery/jquery.min.js -> js/jquery.min.js
+	renamed:    bootstrap/js/npm.js -> js/npm.js
+	renamed:    looged in.html -> logged-in.html
+	new file:   note.txt
+
